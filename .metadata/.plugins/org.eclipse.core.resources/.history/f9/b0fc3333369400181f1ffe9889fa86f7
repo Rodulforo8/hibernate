@@ -1,0 +1,25 @@
+package hibernate.demo.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="libros")
+public class libros {
+
+	@Id
+	@Column(name="idLibro")
+	private int idLibro;
+	
+		
+		private int idLibro;
+		private String nombre;
+		private String sponsor;
+		
+		public libros(){
+			
+	
+		
+	}
+
+}

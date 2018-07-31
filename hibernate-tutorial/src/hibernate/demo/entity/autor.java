@@ -1,0 +1,64 @@
+package hibernate.demo.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="libros")
+public class autor {
+
+	@Id
+	@Column(name="idLibro")
+	private int idLibro;
+	
+	@Column(name="nombre")
+    private String nombre;
+	
+	@Column(name="sponsor")
+    private String sponsor;
+		
+		public autor(){
+			
+	}
+
+		public autor(String nombre, String sponsor) {
+			super();
+			this.nombre = nombre;
+			this.sponsor = sponsor;
+		}
+
+		public int getIdLibro() {
+			return idLibro;
+		}
+
+		public void setIdLibro(int idLibro) {
+			this.idLibro = idLibro;
+		}
+
+		public String getNombre() {
+			return nombre;
+		}
+
+		public void setNombre(String nombre) {
+			this.nombre = nombre;
+		}
+
+		public String getSponsor() {
+			return sponsor;
+		}
+
+		public void setSponsor(String sponsor) {
+			this.sponsor = sponsor;
+		}
+
+		@Override
+		public String toString() {
+			return "autor [idLibro=" + idLibro + ", nombre=" + nombre + ", sponsor=" + sponsor + "]";
+		}
+
+
+		
+
+}

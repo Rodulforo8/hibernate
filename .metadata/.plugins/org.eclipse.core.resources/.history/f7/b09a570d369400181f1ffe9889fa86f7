@@ -1,0 +1,12 @@
+package hibernate.demo.entity;
+
+@Entity
+@Table(name="libros")
+
+public class autor {
+
+	
+	
+	
+	
+}
